@@ -26,10 +26,13 @@ def con():
         try:
           x.recv(1)
         except:
-          pass
+          clis.remove(x)
+          print("Connection died")
 m=0
 ths=[]
 if __name__ == '__main__':
-  for x in range(0,10000):
+  for x in range(0,1000):
     ths.append(multiprocessing.Process(target=con))
     ths[-1].start()
+  if x%10==0:
+    print(x)
