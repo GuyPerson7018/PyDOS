@@ -1,5 +1,5 @@
 # PyDOS
-A mash up of the range attack and slow read. Takes down apache servers, or greatly increases loading time(more than five times)
+A DOS attack made with a mash up of the range attack and slow read. Takes down apache servers, or greatly increases loading time(more than five times)
 
 wget before the attack - 46.8KB/s   in 1.9s
 
